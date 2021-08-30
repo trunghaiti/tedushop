@@ -9,7 +9,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Reponsitory
 {
-    public interface IMenuRepository
+    public interface IMenuRepository : IReponsitory<Menu>
     { 
     
     }

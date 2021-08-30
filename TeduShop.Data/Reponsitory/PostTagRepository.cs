@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Reponsitory
 {
-    public interface IPostTagRepository 
+    public interface IPostTagRepository : IReponsitory<PostTag>
     {
     
     }

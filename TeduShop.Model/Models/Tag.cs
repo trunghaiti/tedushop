@@ -25,6 +25,8 @@ namespace TeduShop.Model.Models
         [Required]
         public string Type { set; get; }
 
+        public virtual IEnumerable<PostTag> PostTag { set; get; }
+
 
     }
 }

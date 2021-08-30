@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Reponsitory
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository : IReponsitory<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }

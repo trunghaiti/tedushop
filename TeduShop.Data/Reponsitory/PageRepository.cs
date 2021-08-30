@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Reponsitory
 {
-    public interface IPageRepository
+    public interface IPageRepository : IReponsitory<Page>
     {
     
     }
