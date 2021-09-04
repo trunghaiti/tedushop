@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,11 +10,16 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data
 {
-    public class TeduShopDbContext : DbContext
+    public class TeduShopDbContext : IdentityDbContext<ApplicationUser>
     {
         public TeduShopDbContext() : base("TeduShopDbContext")
         {
             this.Configuration.LazyLoadingEnabled = false;
+        }
+
+        public static TeduShopDbContext Create()
+        {
+            return new TeduShopDbContext();
         }
 
         public DbSet<Footer> Footers { set; get; }
@@ -38,6 +44,9 @@ namespace TeduShop.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<IdentityUserRole>().HasKey(x => new { x.UserId, x.RoleId });
+            modelBuilder.Entity<IdentityUserLogin>().HasKey(x => x.UserId);            
         }
+
     }
 }
