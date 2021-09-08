@@ -244,6 +244,7 @@
     <Content Include="app\shared\modules\tedushop.common.js" />
     <Content Include="app\shared\services\apiService.js" />
     <Content Include="app\shared\filter\statusFilter.js" />
+    <Content Include="app\shared\services\notificationService.js" />
     <Content Include="Assets\admin\bootstrap\css\bootstrap.css" />
     <Content Include="Assets\admin\bootstrap\css\bootstrap.min.css" />
     <Content Include="Assets\admin\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -1029,6 +1030,8 @@
     <Content Include="Assets\admin\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="Assets\admin\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="Assets\admin\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="content\toastr.css" />
+    <Content Include="content\toastr.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular-animate.js" />
@@ -1808,6 +1811,8 @@
     <Content Include="Scripts\test-bundles\angular-route.js" />
     <Content Include="Scripts\test-bundles\angular-sanitize.js" />
     <Content Include="Scripts\test-bundles\angular-touch.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1859,6 +1864,8 @@
     <Content Include="Assets\admin\plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="Assets\admin\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Assets\admin\plugins\input-mask\phone-codes\phone-codes.json" />
+    <Content Include="content\toastr.scss" />
+    <Content Include="content\toastr.less" />
     <None Include="packages.config" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
