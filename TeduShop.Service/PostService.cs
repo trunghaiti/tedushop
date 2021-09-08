@@ -9,9 +9,9 @@ namespace TeduShop.Service
 {
     public interface IPostService 
     {
-        void Add(Post post);
+        Post Add(Post post);
         void Update(Post post);
-        void Delete(int id);
+        Post Delete(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow);
         IEnumerable<Post> GetAlByCategoryPaging(int categoryId, int page, int pageSize, out int totalRow);
@@ -30,14 +30,14 @@ namespace TeduShop.Service
             this._unitOfWork = unitOfWork;
         }
 
-        public void Add(Post post)
+        public Post Add(Post post)
         {
-            _postReponsitory.Add(post);
+            return _postReponsitory.Add(post);
         }
 
-        public void Delete(int id)
+        public Post Delete(int id)
         {
-            _postReponsitory.Delete(id);
+            return _postReponsitory.Delete(id);
         }
 
         public IEnumerable<Post> GetAlByCategoryPaging(int categoryId, int page, int pageSize, out int totalRow)
